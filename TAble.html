@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <Center>
+    <h1>E Commerce sederhana</h1>
+    <table id="Commerce">
+    <th>Produk</th>
+    <th>Harga</th>
+    <th>Gambar Produk</th>
+    <th>Action</th>
+    <tr id='lay'>
+        <td>Lays</td>
+        <td>11000</td>
+        <td><img src="lays.jpg" alt="Lays" width="150" height="100"></td>
+        <td><button onclick="add()"> Add to cart </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Frestea</td>
+        <td>6000</td>
+        <td><img src="frestea.jpg" alt="Lays" width="150" height="100"></td>
+        <td><button onclick="add()"> Add to cart </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Apple</td>
+        <td>7000</td>
+        <td><img src="apple.png" alt="Lays" width="150" height="100"></td>
+        <td><button onclick="add()"> Add to cart </button>
+        </td>
+    </tr>
+</table>
+    <br>
+    <p id="kosong"> Ohoooo</p>
+<table>
+    <tbody id='deer'>
+
+    </tbody>
+</table>
+
+
+
+
+
+</Center>
+</body>
+<script>
+let arrpro=[]
+
+const add=()=>{
+    var lars=document.getElementById('lay').value
+    var td=lars.getElementsByTagName("td")
+   console.log(td)
+    // var obj={lars}
+    // arrpro.push(lars)
+    // ouput()
+}
+
+// const ouput=()=>{
+//     var output=arrpro.map((val,index)=>{
+//         return   return (
+//             `<tr>
+//                 <td>${val.}</td>
+//                 <td>${val.}</td>
+//                 <td>${val.}</td>
+//                 <td>${val.}</td>
+//             </tr>`
+//         )
+//     })
+//     console.log(output)
+//     document.getElementById('deer').innerHTML=output.join('')
+// }
+
+// const add=()=>{
+//     var output=""
+//     table=document.getElementById('Commerce')
+//     tr = table.getElementsByTagName("tr");
+    
+//     for(let i=0;i<tr.length;i++){
+
+//     }
+
+
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
